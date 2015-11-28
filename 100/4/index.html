@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.box{position:relative;width: 300px;height: 300px;
+		border: 2px solid red;}
+    .ball{position:absolute;
+  top: 10px;
+  left:10px;
+  width: 50px;height: 50px;
+  background-color: blue;
+  border-radius: 10%;
+  transition: all 3s ease-in-out;}
+.ball2{position:absolute;
+  bottom: 10px;
+  left:10px;
+  width: 50px;height: 50px;
+  background-color: yellow;
+  border-radius: 10%;
+  transition:all 3s ease-in-out;}
+.ball3{position:absolute;
+  top: 10px;
+  right:10px;
+  width: 50px;height: 50px;
+  background-color: gray;
+  border-radius: 10%;
+  transition:all 3s ease-in-out;}
+.ball4{position:absolute;
+  bottom: 10px;
+  right:10px;
+  width: 50px;height: 50px;
+  background-color: green;
+  border-radius: 10%;
+  transition:all 3s ease-in-out;}
+.box:hover .ball{
+  top: 250px;
+  left: 250px;
+  border-radius: 50%;
+  background-color: lightseagreen;}
+.box:hover .ball2{
+  bottom: 250px;
+  left: 250px;
+  border-radius: 50%;
+  background-color: deeppink;}
+.box:hover .ball3{
+  top: 250px;
+  right: 250px;
+  border-radius: 50%;
+  background-color: black;}
+.box:hover .ball4{
+  bottom: 250px;
+  right: 250px;
+  border-radius: 50%;
+  background-color: orange;}
+	</style>
+</head>
+<body>
+	<h1>TRANSITION</h1>
+	<div class="box">
+    <div class="ball"></div>
+    <div class="ball2"></div>
+    <div class="ball3"></div>
+    <div class="ball4"></div>
+</div>
+	</div>
+</body>
+</html>
