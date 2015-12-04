@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+	.parents{
+		background-color: pink;
+		border: 3px solid red;
+	}
+	.left{
+		background-color: yellow;
+		height: 50px;
+		width: 20%;
+		float: left;
+	}
+	.right{
+		background-color: green;
+		height: 50px;
+		width: 70%;
+		float: right;
+	}
+	</style>
+</head>
+<body>
+	<h1>clearfix清除浮动</h1>
+	<div class="parents clearfix">
+		<div class="left"></div>
+		<div class="right"></div>
+	</div><!-- http://haoduoshipin.com/v/166 -->
+</body>
+</html>
