@@ -1,4 +1,5 @@
-.first, .second{
+*{margin: 0}
+.first, .second, .third{
 	color: #fff;
 	line-height: 120px;
 	text-align: center;
@@ -10,19 +11,42 @@
 	background-color: deeppink;
 	margin-bottom: 20px;
 }
-@media (min-width: 700px){
+@media (min-width: 500px){
 	.first{
 		float:left;
 		width: 50%;
 	}
+	.second{
+		float: left;
+		width: 50%;
+	}
+	.third{
+		clear: both;
+	}
 }
+
+
 .second{
 	height: 120px;
 	background-color: #8fbc8f;
+	margin-bottom: 20px;
 }
-@media (min-width: 700px){
-	.second{
-		float: right;
-		width: 50%;
+.third{
+	height: 120px;
+	background-color: blue;
+}
+@media (min-width: 800px){
+	.first{
+		float: left;
+		width: 33.33%
 	}
+	.second{
+		float: left;
+		width: 33.33%
+	}
+	.third{
+		float: left;
+		width: 33.33%;
+		clear:none;
+		}
 }
