@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>transform</title>
+	<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.js"></script>
+	<style>
+	.box{
+  width: 100px;
+  height: 100px;
+  background-color: lightseagreen;
+  transition:all 1s .1s
+}
+.box.move{
+  transform:rotateY(180deg);
+}
+
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<script>
+	$('.box').click(function(){
+  $(this).toggleClass('move');
+})
+	</script>
+</body>
+</html>
