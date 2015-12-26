@@ -87,6 +87,7 @@ ul {
 		}
 		.menu.move{
 			transform:translateX(0%);
+			z-index: 5;
 		}
 		.hei{
 			width: 100%;
