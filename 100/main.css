@@ -51,8 +51,9 @@ ul {
 
 .toc {
 	/*border: 3px solid red;*/
-	width: 960px;
 	margin: 20px auto;
+	padding: 0 10px;
+	max-width: 900px;
 }
 
 .toc li {
@@ -81,17 +82,24 @@ li a:hover {
 .toc a .id {
 	height: 96px;
 	background-color: rgb(0, 188, 212);
-	width: 48px;
-	float: left;
 	color: white;
 	line-height: 96px;
 	text-align: center;
 }
 .toc a .detail {
 	height: 96px;
-	width: 910px;
-	float: right;
+	overflow: hidden;
 	padding-left: 10px;
+}
+@media (min-width: 600px) {
+	.toc a .id {
+		width: 5%;
+		float: left;
+	}
+	.toc a .detail {
+		width: 95%;
+		float: right;
+	}
 }
 
 .toc a .detail .title {
