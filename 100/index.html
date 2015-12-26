@@ -4,16 +4,27 @@
 	<meta charset="UTF-8">
 	<title>100</title>
   <meta name="viewport" content="width=device-width">
+  <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
   <link rel="shortcut icon"href="one.ico">
 	<link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="15/css/font-awesome.css">
 </head>
 <body>
 	 <div class="hero clearfix">
     <h1>百页斩</h1>
     <p>代码如画笔 百日百页面</p>
   </div>
-	
+	<div class="button"><i class="icon-reorder icon-2x"></i></div><!-- 小图标，这里有个字体图标的用法 -->
+    <div class="hei"></div><!-- 黑色半透明的大按钮 -->
+    <div class="menu">
+      <ul>
+        <li><a href="http://gakkisama.github.io">HOME</a></li>
+        <li><a href="http://weibo.com/201271819">新垣杰瑞</a></li>
+        <li><a href="http://codepen.io">codepen</a></li>
+      </ul>
+    </div>
 		<ul class="toc">
+      
 			  <li>
     <a class="clearfix" href="1">
       <div class="id">1</div>
@@ -192,5 +203,16 @@
   </li>
 
 		</ul>
+    <script>
+  $('.button').click(function(){
+    console.log("hahahah");
+    $('.menu').addClass('move');
+    $('.hei').addClass('alpha');
+  });
+  $('.hei').click(function(){
+    $('.menu').removeClass('move')
+    $('.hei').removeClass('alpha')
+  })
+  </script>
 </body>
 </html>
