@@ -48,17 +48,21 @@ ul {
 	text-align: center;
 }
 .button{
-			/*width: 40px;*/
-			/*height: 40px;*/
 			position: absolute;
-			/*background-color: deeppink;*/
 			left: 30px;
 			top: 30px;
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
 			text-align: center;
-			/*line-height: 40px;*/
+			line-height: 60px;
+			transition: background-color .5s;
 			color:#fff;
 			cursor: pointer;
 		}
+.button:hover{
+	background-color: rgba(255, 255, 255, .3);
+}
 		.menu li{
 			list-style: none;
 			line-height: 2.5;
@@ -99,6 +103,7 @@ ul {
 			opacity: 0;
 			background-color:#000;
 			transition:opacity 0.8s .2s;
+			position: fixed;
 		}
 		.hei.alpha{
 			display:block;
